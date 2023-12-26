@@ -2,8 +2,8 @@
 ## 소개
 - - -
 
-![image01.png](Image%2Fimage01.png)
-유니티의 Enum 타입 변수를 인스펙터에서 선택 가능하게 만들어주는 Attribute입니다.
+![Image.png](Image%2FImage.png)  
+배열 또는 리스트를 사용할 때 Element의 이름을 지정할 수 있습니다.
 
 ## 설치
 - - -
@@ -19,21 +19,50 @@ Array Element Title 패키지를 설치하려면 다음 단계가 필요합니�
 ## 사용법
 - - -
 ```cs
-public enum EFruit
+[System.Serializable]
+public class Person
 {
-    Apple,
-    Banana,
-    Orange,
-    Pear,
+    public string Name;
+    public int Age;
 }
 
 public class TestCode : MonoBehaviour
 {
-    [VisibleEnum(typeof(EFruit))]
-    public void OnChangeFruit(int fruit)
-    {
-        EFruit fruitEnum = (EFruit)fruit;
-        Debug.Log($"Fruit : {fruitEnum}");
-    }
+    [ArrayElementTitle("Name")]
+    public Person[] Persons;
 }
 ```
+타이틀의 제목으로 사용할 변수를 `ArrayElementTitle` 의 괄호에 작성합니다.
+
+## 지원되는 자료형
+- - -  
+ - ✔️ : 지원
+ - ❌ : 미지원
+
+| SerializedPropertyType | 지원 여부 |
+| ---------------------- |-------|
+| Integer                | ✔️    |
+| Boolean                | ✔️    |
+| Float                  | ✔️    |
+| String                 | ✔️    |
+| Color                  | ✔️    |
+| ObjectReference        | ✔️    |
+| Enum                   | ✔️    |
+| Vector2                | ✔️    |
+| Vector3                | ✔️    |
+| Vector4                | ✔️    |
+| Generic                | ❌     |
+| LayerMask              | ❌     |
+| Rect                   | ❌     |
+| ArraySize              | ❌     |
+| Character              | ❌     |
+| AnimationCurve         | ❌     |
+| Bounds                 | ❌     |
+| Gradient               | ❌     |
+| Quaternion             | ❌     |
+| ExposedReference       | ❌     |
+| FixedBufferSize        | ❌     |
+| Vector2Int             | ❌     |
+| Vector3Int             | ❌     |
+| RectInt                | ❌     |
+| BoundsInt              | ❌     |
