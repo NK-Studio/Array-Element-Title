@@ -1,0 +1,18 @@
+{
+    "name": "Unity.ArrayElementTitle.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4fcb9510cd34e4f92a4916d5efdad9ca"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
