@@ -36,21 +36,21 @@ public class TestCode : MonoBehaviour
 
 ## 지원되는 자료형
 - - -  
- - ✓ : 지원
+ - ✅ : 지원
  - ❌ : 미지원
 
 | SerializedPropertyType | 지원 여부 |
 | ---------------------- |-------|
-| Integer                | ✔️    |
-| Boolean                | ✔️    |
-| Float                  | ✔️    |
-| String                 | ✔️    |
-| Color                  | ✔️    |
-| ObjectReference        | ✔️    |
-| Enum                   | ✔️    |
-| Vector2                | ✔️    |
-| Vector3                | ✔️    |
-| Vector4                | ✔️    |
+| Integer                | ✅    |
+| Boolean                | ✅    |
+| Float                  | ✅    |
+| String                 | ✅    |
+| Color                  | ✅    |
+| ObjectReference        | ✅    |
+| Enum                   | ✅    |
+| Vector2                | ✅    |
+| Vector3                | ✅    |
+| Vector4                | ✅    |
 | Generic                | ❌     |
 | LayerMask              | ❌     |
 | Rect                   | ❌     |
