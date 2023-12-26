@@ -36,7 +36,7 @@ public class TestCode : MonoBehaviour
 
 ## 지원되는 자료형
 - - -  
- - ✔️ : 지원
+ - ✓ : 지원
  - ❌ : 미지원
 
 | SerializedPropertyType | 지원 여부 |
