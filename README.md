@@ -34,7 +34,6 @@ public class TestCode : MonoBehaviour
 타이틀의 제목으로 사용할 변수를 `ArrayElementTitle` 의 괄호에 작성합니다.
 
 ## 지원되는 자료형
-- - -  
  - ✅ : 지원
  - ❌ : 미지원
 
